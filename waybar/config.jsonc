@@ -143,5 +143,11 @@
     "tray": {
        // "icon-size": 21,
         "spacing": 10
-    }
+    },
+
+    "clock": {
+	"format": "{:%I:%M%p}",
+	"tooltip-format": "{: %A, %B %e %Y}"
+	}	
 }
+
