@@ -1,0 +1,6 @@
+plugins= [
+
+"Duckonaut/split-monitor-workspaces",
+"csgo-vulkan-fix",
+
+]
