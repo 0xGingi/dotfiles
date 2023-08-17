@@ -10,7 +10,7 @@ echo 'Installing Needed Packages'
 if ! command -v yay &> /dev/null
 	then
 echo 'yay not installed - installing now'
-pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay-bin.git && cd yay-bin && makepkg -si
+sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay-bin.git && cd yay-bin && makepkg -si
 cd ..
 echo 'yay is now installed - continuing'
 	else
@@ -18,6 +18,8 @@ echo 'yay is already installed - continuing'
 fi
 
 yay -S --needed --noconfirm qt5-wayland qt5ct qt6-wayland qt6ct qt5-svg qt5-quickcontrols2 qt5-graphicaleffects gtk3 polkit-gnome pipewire jq wl-clipboard cliphist python-requests pacman-contrib
+#Need spdlog-git for waybar to successfully build
+yay -S --needed spdlog-git
 yay -S --needed --noconfirm hyprland kitty mako waybar-hyprland-git nvim wofi xdg-desktop-portal-hyprland hyprpaper neovim swappy grim slurp btop pamixer pavucontrol network-manager-applet starship papirus-icon-theme indicator-kdeconnect-git kdeconnect ttf-jetbrains-mono-nerd noto-fonts-emoji lxappearance nwg-look-bin cliphist starship nautilus swaylock-effects wlogout brightnessctl bluez bluez-utils blueman gvfs
 
 clear
