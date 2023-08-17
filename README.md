@@ -23,7 +23,6 @@ cp -r wofi ~/.config/wofi
 cp starship.toml ~/.config/starship.toml
 echo -e '\neval "$(starship init bash)"' >> ~/.bashrc
 cp  flatppuccin_4k_macchiato.png ~/Pictures/flatppuccin_4k_macchiato.png
-echo -e '\neval "$(starship init bash)"' >> ~/.bashrc
 ```
 
 ![alt text](https://github.com/0xGingi/dotfiles/blob/main/Screenshots/Desktop.png?raw=true)
