@@ -5,6 +5,19 @@ vim.cmd.colorscheme "catppuccin"
 
 vim.opt.termguicolors = true
 
+require('catppuccin')
+require('plenary')
+require('telescope')
+require('gitsigns')
+require('barbar')
+require('nvim-web-devicons')
+require('barbar').setup({
+  animation = true,
+  clickable = true
+})
+require('noice')
+require('nvim-treesitter')
+require('notify')
 require('core/keymaps')
 require("nvim-tree").setup({
   on_attach = my_on_attach,
