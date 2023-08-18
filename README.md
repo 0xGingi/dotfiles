@@ -1,13 +1,13 @@
 # dotfiles
 some of my dotfiles for my hyprland desktop
+Auto Install: ```git clone https://github.com/0xGingi/dotfiles && cd dotfiles && chmod +x install.sh && bash install.sh```
+
+Manual Install:
 
 Packages needed for configs (There are more optionals, check install.sh)
 ```
 yay -S --needed spdlog-git hyprland kitty mako waybar-hyprland-git wofi xdg-desktop-portal-hyprland hyprpaper neovim swappy grim slurp btop pamixer pavucontrol network-manager-applet starship papirus-icon-theme ttf-jetbrains-mono-nerd noto-fonts-emoji lxappearance nwg-look-bin polkit-gnome wl-clipboard cliphist starship nautilus swaylock-effects wlogout 
 ```
-Auto Install: ```git clone https://github.com/0xGingi/dotfiles && cd dotfiles && chmod +x install.sh && bash install.sh```
-
-Manual Install:
 ```
 git clone https://github.com/0xGingi/dotfiles
 cd dotfiles
