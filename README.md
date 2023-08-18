@@ -1,10 +1,10 @@
 # dotfiles
 some of my dotfiles for my hyprland desktop
 
-##Auto Install: 
+## Auto Install: 
 ```git clone https://github.com/0xGingi/dotfiles && cd dotfiles && chmod +x install.sh && bash install.sh```
 
-##Manual Install:
+## Manual Install:
 
 Packages needed for configs (There are more optionals, check install.sh)
 ```
