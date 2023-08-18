@@ -30,12 +30,12 @@ echo 'backing up existing configs'
         DIRPATH=~/.config/$DIR
         if [ -d "$DIRPATH" ]; then 
             echo -e "$CAT - Config for $DIR located, backing up."
-            mv $DIRPATH $DIRPATH-back &>> $INSTLOG
+            mv $DIRPATH $DIRPATH-back
             echo -e "$COK - Backed up $DIR to $DIRPATH-back."
         fi
 
         # make new empty folders
-        mkdir -p $DIRPATH &>> $INSTLOG
+        mkdir -p $DIRPATH
     done
 
 STARPATH=~/.config
