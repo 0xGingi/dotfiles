@@ -17,5 +17,6 @@ Plug 'folke/noice.nvim'
 Plug 'MunifTanjim/nui.nvim'
 Plug 'rcarriga/nvim-notify'
 Plug 'nvim-treesitter/nvim-treesitter'
+Plug 'andweeb/presence.nvim'
 
 call'plug#end'

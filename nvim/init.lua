@@ -32,4 +32,6 @@ require("nvim-tree").setup({
     dotfiles = true,
   },
 })
-
+require("presence").setup({
+	auto_update = true
+})
