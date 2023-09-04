@@ -21,6 +21,8 @@ yay -S --needed --noconfirm qt5-wayland qt5ct qt6-wayland qt6ct qt5-svg qt5-quic
 #Need spdlog-git for waybar to successfully build
 yay -S --needed spdlog-git
 yay -S --needed --noconfirm hyprland kitty mako waybar-hyprland-git nvim wofi xdg-desktop-portal-hyprland hyprpaper neovim swappy grim slurp btop pamixer pavucontrol network-manager-applet starship papirus-icon-theme indicator-kdeconnect-git kdeconnect ttf-jetbrains-mono-nerd noto-fonts-emoji lxappearance nwg-look-bin cliphist starship thunar swaylock-effects wlogout brightnessctl bluez bluez-utils blueman gvfs
+#Install hyprload
+curl -sSL https://raw.githubusercontent.com/Duckonaut/hyprload/main/install.sh | bash
 
 clear
 
@@ -43,16 +45,16 @@ if [ -f "starship.toml" ]; then
 cp starship.toml starship-back.toml
 fi
 
-cp -r btop ~/.config/btop
-cp -r hypr ~/.config/hypr
-cp -r kitty ~/.config/kitty
-cp -r mako ~/.config/mako
-cp -r nvim ~/.config/nvim
-cp -r swaylock ~/.config/swaylock
-cp -r waybar ~/.config/waybar
-cp -r wlogout ~/.config/wlogout
-cp -r wofi ~/.config/wofi
-cp starship.toml ~/.config/starship.toml
+mv btop ~/.config/
+mv hypr ~/.config/
+mv kitty ~/.config/
+mv mako ~/.config/
+mv nvim ~/.config/
+mv swaylock ~/.config/
+mv waybar ~/.config/
+mv wlogout ~/.config/
+mv wofi ~/.config/
+mv starship.toml ~/.config/starship.toml
 echo -e '\neval "$(starship init bash)"' >> ~/.bashrc
 
 DIRPATH=~/
