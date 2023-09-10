@@ -6,23 +6,23 @@ some of my dotfiles for my hyprland desktop
 
 ## Manual Install:
 
-Packages needed for configs (There are more optionals, check install.sh)
+Packages needed for configs (There are more optionals, check install.sh, Make sure to backup existing configs)
 ```
 yay -S --needed spdlog-git hyprland kitty mako waybar-hyprland-git wofi xdg-desktop-portal-hyprland hyprpaper neovim swappy grim slurp btop pamixer pavucontrol network-manager-applet starship papirus-icon-theme ttf-jetbrains-mono-nerd noto-fonts-emoji lxappearance nwg-look-bin polkit-gnome wl-clipboard cliphist starship thunar swaylock-effects wlogout 
 ```
 ```
 git clone https://github.com/0xGingi/dotfiles
 cd dotfiles
-cp -r btop ~/.config/btop
-cp -r hypr ~/.config/hypr
-cp -r kitty ~/.config/kitty
-cp -r mako ~/.config/mako
-cp -r nvim ~/.config/nvim
-cp -r swaylock ~/.config/swaylock
-cp -r waybar ~/.config/waybar
-cp -r wlogout ~/.config/wlogout
-cp -r wofi ~/.config/wofi
-cp starship.toml ~/.config/starship.toml
+mv btop ~/.config/
+mv hypr ~/.config/
+mv kitty ~/.config/
+mv mako ~/.config/
+mv nvim ~/.config/
+mv swaylock ~/.config/
+mv waybar ~/.config/
+mv wlogout ~/.config/
+mv wofi ~/.config/
+mv starship.toml ~/.config/starship.toml
 echo -e '\neval "$(starship init bash)"' >> ~/.bashrc
 cp  flatppuccin_4k_macchiato.png ~/Pictures/flatppuccin_4k_macchiato.png
 ```
