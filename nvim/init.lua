@@ -1,11 +1,11 @@
-require("v9.plugins")
+require("plugins.plugins")
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
-vim.cmd.colorscheme "catppuccin"
-
+vim.wo.number = true
 vim.opt.termguicolors = true
 
 require('catppuccin')
+vim.cmd.colorscheme "catppuccin"
 require('plenary')
 require('telescope')
 require('gitsigns')

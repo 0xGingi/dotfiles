@@ -1,11 +1,9 @@
-local call = vim.call
+local vim = vim
 
-local cmd = vim.cmd
 local Plug = vim.fn['plug#']
-local PATH = "~/.config/nvim/plugged"
+vim.call('plug#begin', '~/.config/nvim/plugged')
 
-call('plug#begin', PATH)
-Plug 'catppuccin/nvim'
+Plug ('catppuccin/nvim', { as = 'catppuccin' })
 Plug 'nvim-tree/nvim-web-devicons'
 Plug 'nvim-tree/nvim-tree.lua'
 Plug 'nvim-lua/plenary.nvim'
@@ -19,4 +17,4 @@ Plug 'rcarriga/nvim-notify'
 Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'andweeb/presence.nvim'
 
-call'plug#end'
+vim.call('plug#end')
