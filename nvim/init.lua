@@ -4,7 +4,9 @@ vim.g.loaded_netrwPlugin = 1
 vim.wo.number = true
 vim.opt.termguicolors = true
 
-require('catppuccin')
+require('catppuccin').setup({
+	flavour = "mocha"
+})
 vim.cmd.colorscheme "catppuccin"
 require('plenary')
 require('telescope')
