@@ -29,7 +29,10 @@ cp  flatppuccin_4k_macchiato.png ~/Pictures/flatppuccin_4k_macchiato.png
 ## Other Info
 Make sure to replace monitors (check hyprctl monitors) with yours in hypr/hyprland.conf
 
-For nvim plugins
+For nvim plugins:
+
+``` sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim' ```
+
 ```:PlugInstall```
 
 ![alt text](https://github.com/0xGingi/dotfiles/blob/main/Screenshots/Desktop.png?raw=true)
