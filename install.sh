@@ -18,12 +18,13 @@ echo 'yay is already installed - continuing'
 fi
 
 yay -S --needed --noconfirm qt5-wayland qt5ct qt6-wayland qt6ct qt5-svg qt5-quickcontrols2 qt5-graphicaleffects gtk3 polkit-gnome pipewire jq wl-clipboard cliphist python-requests pacman-contrib
-#Need spdlog-git for waybar to successfully build
-yay -S --needed spdlog-git
-yay -S --needed --noconfirm hyprland kitty mako waybar-hyprland-git nvim wofi xdg-desktop-portal-hyprland hyprpaper neovim swappy grim slurp btop pamixer pavucontrol network-manager-applet starship papirus-icon-theme indicator-kdeconnect-git kdeconnect ttf-jetbrains-mono-nerd noto-fonts-emoji lxappearance nwg-look-bin cliphist starship thunar swaylock-effects wlogout brightnessctl bluez bluez-utils blueman gvfs
+yay -S --needed --noconfirm spdlog-git sdbus-cpp-git
+yay -S --needed --noconfirm hyprland-git kitty mako waybar-hyprland-git nvim wofi xdg-desktop-portal-hyprland-git xdg-desktop-portal-gtk hyprpaper neovim swappy grim slurp btop pamixer pavucontrol network-manager-applet starship papirus-icon-theme indicator-kdeconnect-git kdeconnect ttf-jetbrains-mono-nerd noto-fonts-emoji lxappearance nwg-look-bin cliphist starship nautilus swaylock-effects wlogout brightnessctl bluez bluez-utils blueman gvfs
 #Install hyprload
-curl -sSL https://raw.githubusercontent.com/Duckonaut/hyprload/main/install.sh | bash
-
+#curl -sSL https://raw.githubusercontent.com/Duckonaut/hyprload/main/install.sh | bash
+#
+#Install vim-plug for neovim
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 clear
 
 echo 'backing up existing configs'
@@ -35,9 +36,7 @@ echo 'backing up existing configs'
             mv $DIRPATH $DIRPATH-back
             echo -e "$COK - Backed up $DIR to $DIRPATH-back."
         fi
-
-        # make new empty folders
-        mkdir -p $DIRPATH
+        
     done
 
 STARPATH=~/.config
@@ -68,4 +67,4 @@ fi
 clear
 
 echo 'Configs successfully copied!'
-echo 'Start with sddm, gdm, or the hyprctl command'
+echo 'Start with sddm, gdm, or the Hyprland command'
