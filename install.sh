@@ -53,10 +53,10 @@ echo -e '\neval "$(starship init bash)"' >> ~/.bashrc
 
 DIRPATH=~/
 if [ -d "Pictures" ]; then
-cp flatppuccin_4k_macchiato.png ~/Pictures/flatppuccin_4k_macchiato.png
+cp ff.png ~/Pictures/ff.png
 else
 mkdir ~/Pictures
-cp flatppuccin_4k_macchiato.png ~/Pictures/flatppuccin_4k_macchiato.png
+cp ff.png ~/Pictures/ff.png
 fi
 
 clear
