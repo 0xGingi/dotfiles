@@ -17,9 +17,9 @@ echo 'yay is now installed - continuing'
 echo 'yay is already installed - continuing'
 fi
 
-yay -S --needed --noconfirm qt5-wayland qt5ct qt6-wayland qt6ct qt5-svg qt5-quickcontrols2 qt5-graphicaleffects gtk3 polkit-gnome pipewire jq wl-clipboard cliphist python-requests pacman-contrib
+yay -S --needed --noconfirm qt5-wayland qt5ct qt6-wayland qt6ct qt5-svg qt5-quickcontrols2 qt5-graphicaleffects gtk3 polkit-kde-agent pipewire jq wl-clipboard cliphist python-requests pacman-contrib
 yay -S --needed --noconfirm spdlog-git sdbus-cpp
-yay -S --needed --noconfirm hyprland-git kitty mako waybar-hyprland-git nvim wofi xdg-desktop-portal-hyprland-git xdg-desktop-portal-gtk hyprpaper neovim swappy grim slurp btop pamixer pavucontrol network-manager-applet starship papirus-icon-theme indicator-kdeconnect-git kdeconnect ttf-jetbrains-mono-nerd noto-fonts-emoji lxappearance nwg-look-bin cliphist starship nautilus swaylock-effects wlogout brightnessctl bluez bluez-utils blueman gvfs
+yay -S --needed --noconfirm hyprland-git kitty mako nwg-panel nvim wofi xdg-desktop-portal-hyprland-git xdg-desktop-portal-gtk hyprpaper neovim swappy grim slurp btop pamixer pavucontrol network-manager-applet starship papirus-icon-theme indicator-kdeconnect-git kdeconnect ttf-jetbrains-mono-nerd noto-fonts-emoji lxappearance nwg-look-bin cliphist starship nautilus swaylock-effects wlogout brightnessctl bluez bluez-utils blueman gvfs
 clear
 
 echo 'backing up existing configs'
@@ -45,7 +45,7 @@ mv kitty ~/.config/
 mv mako ~/.config/
 mv nvim ~/.config/
 mv swaylock ~/.config/
-mv waybar ~/.config/
+mv nwg-panel ~/.config/
 mv wlogout ~/.config/
 mv wofi ~/.config/
 mv starship.toml ~/.config/starship.toml
