@@ -8,7 +8,7 @@ some of my dotfiles for my catppuccin themed hyprland desktop
 
 Packages needed for configs (There are more optionals, check install.sh, Make sure to backup existing configs)
 ```
-yay -S --needed spdlog-git sdbus-cpp-git xdg-desktop-portal-gtk hyprland-git kitty mako nwg-panel wofi xdg-desktop-portal-hyprland-git hyprpaper neovim swappy grim slurp btop pamixer pavucontrol network-manager-applet starship papirus-icon-theme ttf-jetbrains-mono-nerd noto-fonts-emoji lxappearance nwg-look-bin polkit-kde-agent wl-clipboard cliphist starship dolphin swaylock-effects wlogout 
+yay -S --needed spdlog-git sdbus-cpp-git xdg-desktop-portal-gtk hyprland-git kitty mako nwg-panel xwaylandvideobridge-git wofi xdg-desktop-portal-hyprland-git hyprpaper neovim swappy grim slurp btop pamixer pavucontrol network-manager-applet starship papirus-icon-theme ttf-jetbrains-mono-nerd noto-fonts-emoji lxappearance nwg-look-bin polkit-kde-agent wl-clipboard cliphist starship dolphin swaylock-effects wlogout 
 ```
 ```
 git clone https://github.com/0xGingi/dotfiles
